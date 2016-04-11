@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+</head>
+<body onload="eventoLoad();">
+	<h1>Eventos</h1>
+	<hr>
+	<label>campo de texto</label>
+	<br>
+	<input type="text" id="elemento" 
+	onclick="eventoClick();"
+    onchange="eventoChange();" 
+	onkeydown="eventoKeyDown();"
+    onkeyup="eventoKeyUp();"
+    onkeypress="eventoKeyPress();" 
+	>
+	<br>
+	<label>eventos:</label>
+	<br>
+	<textarea  id="salida" cols="40" rows="10"></textarea>
+	<script>
+		var salida = document.getElementById("salida");
+		function eventoLoad(){
+	    salida.innerHTML += ">> Evento: onload \n" ;
+	    }
+	    function eventoClick(){
+		salida.innerHTML += ">> Evento: onclick \n";
+	    }
+	    function eventoChange(){
+	    	salida.innerHTML += ">> Evento: onchange \n";
+	    }
+	    function eventoKeyDown() {
+	    	salida.innerHTML += ">> Evento: onkeydown \n"; 
+	    }
+	    function eventoKeyUp() {
+	    	salida.innerHTML += ">> Evento: onkeyup \n"; 
+	    }
+	    function eventokeyPress() {
+	    	salida.innerHTML += ">> Evento: onkeypress \n"; 
+	    }
+
+
+
+
+	   
+		
+	</script>
+</body>
+</html>

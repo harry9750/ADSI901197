@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ciclo for</title>
+</head>
+<body>
+	<h1>ciclo for (reto)</h1>
+<hr>
+	<script>
+	var graficar = document.getElementById("graficar");
+	var tabla = document.getElementById("tabla");
+	graficar.onclick = function(){
+		var nf = document.getElementById("nf").value;
+		var nc = document.getElementById("nc").value;
+		var contenido = "";
+		for (var i = 0; i < nf; i++){
+			contenido += "<tr>";
+			for (var j = 0; j < nc; j++){
+				contenido += "<td> f:" +i+ "c:"+j+j "</td>";
+			}
+			contenido
+		}
+	}
+		
+	
+	</script>
+	
+</body>
+</html>
